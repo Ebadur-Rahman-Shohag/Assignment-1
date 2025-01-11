@@ -341,6 +341,59 @@ main {
   margin-top: 32px;
 }
 
+/* Quote Container */
+.quote-container {
+  max-width: 1280px;
+  height: 256px;
+  margin-top: 32px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.quote-details-container {
+  max-width: 1232px;
+  margin: 48px 12px;
+  background: url("/assets/quote-bg.png");
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: top left;
+  background-position-y: 9px;
+  overflow-y: hidden;
+}
+
+.quote-description {
+  max-width: 100%;
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 32px;
+}
+
+.author-name {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.author-designation {
+  margin-top: 4px;
+  margin-bottom: 48px;
+  color: rgba(14, 14, 14, 0.6);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
 /* Donate Section */
 .donate-container {
   margin-top: 80px;
