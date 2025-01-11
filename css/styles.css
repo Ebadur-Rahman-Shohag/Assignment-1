@@ -14,8 +14,8 @@ body {
 /*----------------Header Section-----------------*/
 
 /* Navbar */
+
 nav {
-  max-width: 1600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,4 +92,144 @@ nav > button {
 
 .banner-image-container {
   margin: 0px 64px;
+}
+
+/* ---------------main Section--------------- */
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* The vision of future section */
+.future-vision-container {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.future-vision-title {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin: 24px 0px;
+}
+
+.future-vision-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 12px 0px;
+}
+
+.future-vision-card-container {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.card-1 {
+  width: 410.67px;
+  height: 325px;
+  padding: 32px;
+  border-radius: 16px;
+  background: rgba(84, 144, 245, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.card-2 {
+  width: 410.67px;
+  height: 325px;
+  padding: 32px;
+  border-radius: 16px;
+  background: rgb(198, 228, 214);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.card-3 {
+  width: 410.67px;
+  height: 325px;
+  padding: 32px;
+  border-radius: 16px;
+  background: rgb(247, 235, 207);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.card-image {
+  width: 62px;
+  height: 62px;
+}
+
+.card-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin: 12px 0px;
+}
+
+.card-description {
+  max-width: 346.67px;
+  min-height: 48px;
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 12px 0px;
+}
+
+.card-1-btn {
+  border: none;
+  background: rgb(84, 144, 245);
+  border-radius: 8px;
+  margin: 24px 0px;
+  padding: 11px 20px 11px 20px;
+  color: rgb(255, 255, 255);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+.card-2-btn {
+  border: none;
+  background: rgb(9, 161, 92);
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 11px 20px 11px 20px;
+  color: rgb(255, 255, 255);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+.card-3-btn {
+  border: none;
+  background: rgb(255, 194, 57);
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 11px 20px 11px 20px;
+  color: rgb(255, 255, 255);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
 }
