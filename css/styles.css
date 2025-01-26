@@ -722,8 +722,18 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     margin-top: 2rem;
+  }
+  .card-title {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  .card-description {
+    max-width: 300px;
+    min-height: 0;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-top:12px 0 0 0;
   }
   .card-1 {
     width: 90%;
@@ -740,12 +750,4 @@ main {
     height: 325px;
     padding: 2rem;
   }
-  .card-description {
-    max-width: 300px;
-    min-height: 0;
-    font-size: 1rem;
-    line-height: 1.1rem;
-    margin: 0.8rem 0px;
-  }
- 
 }
