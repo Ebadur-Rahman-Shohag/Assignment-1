@@ -13,21 +13,26 @@ body {
 
 /*----------------Header Section-----------------*/
 
+header {
+  width: 100%;
+}
 /* Navbar */
 
 nav {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 160px 24px 160px;
+  padding: 1.5rem 0;
 }
 
 nav > h1 {
   color: rgb(14, 14, 14);
   font-family: Fira Sans;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 38px;
   text-align: left;
 }
 
@@ -35,7 +40,7 @@ nav > button {
   color: rgb(0, 106, 80);
   border: 1px solid rgb(0, 106, 80);
   border-radius: 8px;
-  padding: 15px 30px 15px 30px;
+  padding: 0.9rem 1.88rem;
 }
 
 nav > button:hover {
@@ -45,9 +50,10 @@ nav > button:hover {
 
 /* Banner */
 .banner-container {
+  width: 100%;
   max-width: 1280px;
   min-height: 560px;
-  margin: 0 auto 20px auto;
+  margin: 1.25rem auto;
   border-radius: 24px;
   background: rgb(198, 228, 214);
   display: flex;
@@ -55,30 +61,29 @@ nav > button:hover {
   justify-content: center;
 }
 
+.banner-details {
+  margin: 0px 4rem;
+}
+
 .banner-title {
   color: rgba(14, 14, 14, 0.5);
   font-family: Fira Sans;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 29px;
   text-align: left;
-  margin: 16px 0px;
+  margin: 1rem 0px;
 }
 
 .banner-description {
   max-width: 622px;
   color: rgb(14, 14, 14);
   font-family: Fira Sans;
-  font-size: 50px;
+  font-size: 3.1rem;
   font-weight: 700;
-  line-height: 67px;
-  letter-spacing: 0%;
+  line-height: 4.1rem;
   text-align: left;
-  margin-top: 16px;
-  margin-bottom: 24px;
-}
-.banner-details {
-  margin: 0px 64px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .banner-button {
@@ -101,11 +106,14 @@ nav > button:hover {
 }
 
 .banner-image-container {
-  margin: 0px 64px;
+  margin: 0px 4rem;
 }
-
+.banner-image {
+  width: 100%;
+}
 /* ---------------main Section--------------- */
 main {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -118,14 +126,14 @@ main {
 .future-vision-title {
   color: rgb(14, 14, 14);
   font-family: Fira Sans;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 48px;
   text-align: left;
-  margin: 24px 0px;
+  margin: 1.5rem 0px;
 }
 
 .future-vision-description {
+  width: 100%;
   color: rgba(14, 14, 14, 0.7);
   font-family: Fira Sans;
   font-size: 16px;
@@ -136,6 +144,7 @@ main {
 }
 
 .future-vision-card-container {
+  width: 100%;
   display: flex;
   gap: 24px;
   margin-top: 32px;
@@ -629,4 +638,114 @@ main {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 80px;
+}
+
+/* responsive.css */
+/* Responsive for mobile devices */
+@media screen and (max-width: 576px) {
+  nav {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  nav > h1 {
+    font-size: 1.5rem;
+  }
+
+  nav > button {
+    padding: 0.5rem 1rem;
+  }
+
+  /* banner section */
+  .banner-container {
+    width: 95%;
+    margin: 1.25rem auto;
+    flex-direction: column-reverse;
+  }
+
+  br {
+    display: none;
+  }
+
+  .banner-details {
+    max-width: 300px;
+    margin: 0;
+  }
+  .banner-title {
+    font-size: 1.25rem;
+    margin: 1rem 0px;
+    text-align: center;
+  }
+
+  .banner-description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .banner-button-container {
+    text-align: center;
+  }
+  .banner-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .banner-image-container {
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  /* main section */
+  .future-vision-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto 0 auto;
+  }
+  .future-vision-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .future-vision-description {
+    max-width: 300px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 12px 0px;
+    text-align: center;
+  }
+  .future-vision-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .card-1 {
+    width: 90%;
+    height: 325px;
+    padding: 2rem;
+  }
+  .card-2 {
+    width: 90%;
+    height: 325px;
+    padding: 2rem;
+  }
+  .card-3 {
+    width: 90%;
+    height: 325px;
+    padding: 2rem;
+  }
+  .card-description {
+    max-width: 300px;
+    min-height: 0;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin: 0.8rem 0px;
+  }
+ 
 }
